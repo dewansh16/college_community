@@ -30,21 +30,31 @@ app.get('/post/:id', async (req, res, next) => {
 
 app.post('/post', async (req, res, next) => {
     const data = req.body.postData;
-    // const post = new Post({ data });
-    // await post.save();
+    const post = new Post({
+        title: `blah blah blahhh`,
+        author:    `blah blah blahhh`,
+        description: `this is the description given by blah blah blahhh`,
+    });
+    await post.save();
+    res.send(post);
 })
 
 app.put('/post/:id', async (req, res, next) => {
     const {id} = req.params;
-    // const post = await Post.findByIdAndUpdate(id,{...req.body.postData},{new: true});
-    // res.send(post);
+    const post = await Post.findByIdAndUpdate(id,{
+        title: `blah blah blahhh`,
+        author:    `blah blah blahhh`,
+        description: `this is the description given by plah plah plahhh`,
+    },{new: true});
+    res.send(post);
 })
 
 app.delete('/post/:id', async (req, res, next) => {
     const { id } = req.params;
-    await Post.findByIdAndDelete(id);
+    const post = await Post.findByIdAndDelete(id);
+    res.send("post deleted successfully");
 })
 
-app.listen(3000, () => {
-    console.log("listening to port 3000");
+app.listen(8080, () => {
+    console.log("listening to port 8080");
 })
