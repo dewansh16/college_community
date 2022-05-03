@@ -12,4 +12,17 @@
       .navIcons{
         @apply w-7 hidden md:inline-flex text-gray-800 hover:scale-[115%] transition-all ease-out duration-100 cursor-pointer
     }
+    .bg-nav{
+        @apply bg-gradient-to-r from-cyan-500 to-blue-500
+    }
+    .list-item{
+      @apply p-3 hover:bg-cyan-600 hover:text-blue-200 
+    }
 }
+.bg-fixed{ 
+  background-attachment: fixed;
+  background-color: black;
+  width: 100%;
+background-image: url("https://www.transparenttextures.com/patterns/black-linen-2.png");
+}
+

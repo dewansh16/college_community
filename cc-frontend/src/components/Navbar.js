@@ -11,11 +11,11 @@ import { HomeIcon } from '@heroicons/react/solid'
 
 function Navbar() {
   return (
-    <div className="h-20 fixed w-full bg-gray-200 ">
+    <div className="h-20 fixed z-10 w-full bg-nav bg-cyan-600 ">
       <div className="md:w-4/5  mx-auto items-center justify-between px-12 flex h-full">
           {/* Logo */}
           <div className="flex justify-between">
-            <h1 className="text-2xl font-bold">CC</h1>
+            <a href='/' className="text-2xl font-bold">CC</a>
           </div>
           {/* Search Field */}
           <div className="md:ml-16 hidden md:block max-w-xs">
@@ -32,22 +32,10 @@ function Navbar() {
           </div>
           {/* Icons */}
           <div className="flex items-center justify-end space-x-3">
-            <HomeIcon className="navIcons" />
-            
-            <UserGroupIcon className="navIcons" />
-            <HeartIcon className="navIcons" />
             <PlusCircleIcon className="navIcons" />
             <MenuIcon className="w-6 md:hidden" />
           </div>
         </div>
-        {/* <div>
-                <ul className='flex gap-4'>
-                    <li>Home</li>
-                    <li>Post</li>
-                    <li>Profile</li>
-                </ul>
-            </div>
-            <div> */}
     </div>
   )
 }
