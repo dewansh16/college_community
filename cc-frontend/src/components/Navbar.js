@@ -11,7 +11,7 @@ import { HomeIcon } from '@heroicons/react/solid'
 
 function Navbar() {
   return (
-    <div className="h-20 fixed w-full bg-nav bg-cyan-600 ">
+    <div className="h-20 fixed z-10 w-full bg-nav bg-cyan-600 ">
       <div className="md:w-4/5  mx-auto items-center justify-between px-12 flex h-full">
           {/* Logo */}
           <div className="flex justify-between">
@@ -36,14 +36,6 @@ function Navbar() {
             <MenuIcon className="w-6 md:hidden" />
           </div>
         </div>
-        {/* <div>
-                <ul className='flex gap-4'>
-                    <li>Home</li>
-                    <li>Post</li>
-                    <li>Profile</li>
-                </ul>
-            </div>
-            <div> */}
     </div>
   )
 }
