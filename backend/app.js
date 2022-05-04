@@ -12,6 +12,8 @@ db.once("open", () => {
 
 const app = express();
 
+app.use(express.static(`${__dirname}/cc-frontend/build`))
+
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req,res) => {
@@ -55,6 +57,7 @@ app.delete('/post/:id', async (req, res, next) => {
     res.send("post deleted successfully");
 })
 
-app.listen(8080, () => {
+const port = process.env.PORT || 8080;
+app.listen(port, () => {
     console.log("listening to port 8080");
 })
