@@ -32,6 +32,7 @@ app.get('/post/:id', async (req, res, next) => {
 
 app.post('/post', async (req, res, next) => {
     const data = req.body.postData;
+    console.log(req);
     const post = new Post({
         title: `blah blah blahhh`,
         author:    `blah blah blahhh`,

@@ -18,6 +18,9 @@
     .list-item{
       @apply p-3 hover:bg-cyan-600 hover:text-blue-200 font-semibold
     }
+    .btn-cyan{
+      @apply  px-4 py-2 text-white hover:bg-cyan-800 duration-150  rounded-lg bg-cyan-700
+    }
 }
 body{ 
   background-attachment: fixed;

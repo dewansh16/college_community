@@ -8,6 +8,7 @@ import {
   MenuIcon,
 } from '@heroicons/react/outline'
 import { HomeIcon } from '@heroicons/react/solid'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
   return (
@@ -15,7 +16,7 @@ function Navbar() {
       <div className="md:w-4/5  mx-auto items-center justify-between px-12 flex h-full">
           {/* Logo */}
           <div className="flex justify-between bg-black p-3 rounded-xl">
-            <a href='/' className="text-2xl text-white font-bold">CC</a>
+            <Link className="text-2xl text-white font-bold" to="/">CC</Link>
           </div>
           {/* Search Field */}
           <div className="md:ml-16 hidden md:block max-w-xs">
@@ -34,7 +35,7 @@ function Navbar() {
           <div className="flex items-center justify-end space-x-3">
             <PlusCircleIcon className="navIcons" />
             <MenuIcon className="w-6 md:hidden" />
-            <button className=' px-4 py-2 text-white hover:bg-cyan-800 duration-150  rounded-lg bg-cyan-700'>
+            <button className='btn-cyan'>
               Login
             </button>
           </div>
