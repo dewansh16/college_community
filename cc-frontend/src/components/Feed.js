@@ -15,22 +15,19 @@ function Feed() {
   }, [])
   console.log(posts);
   return (
-    <div className="flex md:w-4/5 px-12 mx-auto justify-between pt-24">
+    <div className="flex md:w-4/5 px-12 mx-auto justify-center md:justify-between pt-24">
       <div className="flex flex-col ">
-        <Post
-          body={
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nesciunt in asperiores earum, illo porro dolor odit quae quia aliquid id  vitae, inventore saepe nulla, quibusdam cumque vitae, inventore saepe nulla, quibusdam cumque vitae, inventore saepe nulla, quibusdam cumquevitae, inventore saepe nulla, quibusdam cumquevitae, inventore saepe nulla, quibusdam cumquevitae, inventore saepe nulla, quibusdam cumquevitae, inventore saepe nulla, quibusdam cumquevitae, inventore saepe nulla, quibusdam cumquevitae, inventore saepe nulla, quibusdam cumquevitae, inventore saepe nulla, quibusdam cumquevitae, inventore saepe nulla, quibusdam cumquevitae, inventore saepe nulla, quibusdam cumquevitae, inventore saepe nulla, quibusdam cumquevvvitae, inventore saepe nulla, quibusdam cumquevitae, inventore saepe nulla, quibusdam cumquevitae, inventore saepe nulla, quibusdam cumquevitae, inventore saepe nulla, quibusdam cumquevitae, inventore saepe nulla, quibusdam cumque dicta tempore quod?'
-          }
-        />
-        {posts?.map(({ body }) => (
-          <Post body={body} />
+        {posts?.map(({ description }) => (
+          <Post body={description} />
         ))}
       </div>
 
+      <div className='w-full hidden lg:flex lg:justify-end'>
       <div
-        className="fixed lg:block hidden"
+        className="fixed"
       >
         <Resources />
+      </div>
       </div>
     </div>
   )
