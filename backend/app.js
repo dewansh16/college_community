@@ -12,7 +12,7 @@ db.once("open", () => {
 
 const app = express();
 
-app.use(express.static(`${__dirname}/cc-frontend/build`))
+app.use(express.static(`${__dirname}/public/build`))
 
 app.use(express.urlencoded({ extended: true }));
 
