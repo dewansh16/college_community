@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require('mongoose');
 const Post = require('./models/posts');
+const bodyParser = require('body-parser')
 
 mongoose.connect('mongodb://localhost:27017/collegeCommunity');
 
@@ -14,7 +15,11 @@ const app = express();
 
 app.use(express.static(`${__dirname}/public/build`))
 
-app.use(express.urlencoded({ extended: true }));
+// app.use(express.json())
+app.use(bodyParser.urlencoded({
+    extended: true
+  }));
+// app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req,res) => {
     res.send("Hello from college community!!!")
@@ -30,9 +35,9 @@ app.get('/post/:id', async (req, res, next) => {
     res.send(post);
 })
 
-app.post('/post', async (req, res, next) => {
-    const data = req.body.postData;
-    console.log(req);
+app.post('/post', async (req, res) => {
+    const data = req.params;
+    console.log(data);
     const post = new Post({
         title: `blah blah blahhh`,
         author:    `blah blah blahhh`,

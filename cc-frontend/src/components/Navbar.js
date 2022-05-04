@@ -33,7 +33,9 @@ function Navbar() {
           </div>
           {/* Icons */}
           <div className="flex items-center justify-end space-x-3">
-            <PlusCircleIcon className="navIcons" />
+            <Link to={"/post"}>
+            <PlusCircleIcon  className="navIcons" />
+            </Link>
             <MenuIcon className="w-6 md:hidden" />
             <button className='btn-cyan'>
               Login

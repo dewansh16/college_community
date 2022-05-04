@@ -6,28 +6,31 @@ import Resources from './Resources'
 function Feed() {
   const [posts, setPosts] = useState([])
   useEffect(() => {
-    axios.get("/post").then((res) => {
-      console.log(res);
-      setPosts(res.data);
-    }).catch((err) => {
-      console.log(err);
-    })
+    axios
+      .get('/post')
+      .then((res) => {
+        console.log(res)
+        setPosts(res.data)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
   }, [])
-  console.log(posts);
+  console.log(posts)
   return (
-    <div className="flex md:w-4/5 px-12 mx-auto justify-center md:justify-between pt-24">
-      <div className="flex flex-col ">
+    <div className="flex md:w-4/5 px-12 mx-auto justify-center gap-12 md:justify-between pt-24">
+      {/* post */}
+      <div className="flex w-full md:w-2/3 flex-col ">
         {posts?.map(({ description }) => (
           <Post body={description} />
         ))}
       </div>
-
-      <div className='w-full hidden lg:flex lg:justify-end'>
-      <div
-        className="fixed"
-      >
-        <Resources />
-      </div>
+      {/* reso */}
+      {/* <div className="w-full bg-orange-500 relative hidden lg:flex lg:justify-end"> */}
+      <div className="w-1/3 hidden md:flex justify-end">
+        <div className='mr-72'>
+          <Resources />
+        </div>
       </div>
     </div>
   )

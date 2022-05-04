@@ -3,7 +3,7 @@ import React from 'react'
 function Post({body}) {
   return (
     <div className='w-full md:w-auto p-4'>
-      <div className="bg-gray-100 w-full border rounded-lg md:max-w-[700px] md:min-w-[550px]">
+      <div className="bg-gray-100 w-full border rounded-lg">
           
         <div className="flex items-center px-4 py-3">
           <img
