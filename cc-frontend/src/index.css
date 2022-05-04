@@ -19,7 +19,7 @@
       @apply p-3 hover:bg-cyan-600 hover:text-blue-200 
     }
 }
-.bg-fixed{ 
+body{ 
   background-attachment: fixed;
   background-color: black;
   width: 100%;

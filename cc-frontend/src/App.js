@@ -8,20 +8,9 @@ import axios from 'axios';
 
 function App() {
   
-  const [backEndPosts, setBackEndPosts] = useState([]);
-  useEffect(() => {
-    axios.get("/post").then((res) => {
-      console.log(res);
-      setBackEndPosts(res);
-    }).catch((err) => {
-      console.log(err);
-    })
-  }, [])
-
-  console.log(backEndPosts);
 
   return (
-    <div className='bg-fixed'>
+    <div className=''>
       <Navbar />
       <Feed/>
     </div>
