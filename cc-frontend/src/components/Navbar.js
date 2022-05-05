@@ -37,6 +37,9 @@ function Navbar() {
             <PlusCircleIcon  className="navIcons" />
             </Link>
             <MenuIcon className="w-6 md:hidden" />
+            <Link to={'/profile'}>
+            <img className='h-10 w-10 rounded-full'  src="https://lavinephotography.com.au/wp-content/uploads/2017/01/PROFILE-Photography-112.jpg" alt="" />
+            </Link>
             <button className='btn-cyan'>
               Login
             </button>

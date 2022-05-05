@@ -7,6 +7,7 @@ import PostPage from './components/PostPage'
 import Post from './components/Post'
 import Resources from './components/Resources'
 import axios from 'axios';
+import ProfilePage from './components/ProfilePage';
 
 function App() {
   
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Feed/>} />
         <Route path="/post" element={<PostPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
       </Routes>
     </div>
   )
