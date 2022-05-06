@@ -7,9 +7,9 @@ function ProfilePage() {
         {/* <!-- Left Side --> */}
         <div class="w-full md:w-1/6 md:mx-2">
             {/* <!-- Profile Card --> */}
-            <div class=" p-3 border-t-4 border-cyan-400">
-                <div class="image rounded-full overflow-hidden">
-                    <img class="h-auto w-full mx-auto"
+            <div class=" p-3 border-t-4 min-w-[100px] border-cyan-400">
+                <div class="image rounded-full  overflow-hidden">
+                    <img class="md:h-auto h-1/2 w-1/2 md:w-full rounded-full mx-auto"
                         src="https://lavinephotography.com.au/wp-content/uploads/2017/01/PROFILE-Photography-112.jpg"
                         alt=""/>
                 </div>
@@ -25,7 +25,7 @@ function ProfilePage() {
 
 
         {/* <!-- Bottom Side --> */}
-        <div class="md:w-1/2 w-full sm:scale-125 mt-2 align-middle mx-2">
+        <div class="md:w-1/2 w-full px-10 sm:scale-125 mt-2 align-middle mx-2">
             {/* <!-- Profile tab -->
             <!-- About Section --> */}
             <div class="bg-white p-1 sm:p-3 shadow-sm rounded-sm">
@@ -56,14 +56,6 @@ function ProfilePage() {
                         <div class="grid grid-cols-2">
                             <div class="px-4 py-2 font-semibold">Contact No.</div>
                             <div class="px-4 py-2">+11 998001001</div>
-                        </div>
-                        <div class="grid grid-cols-2">
-                            <div class="px-4 py-2 font-semibold">Current Address</div>
-                            <div class="px-4 py-2">Beech Creek, PA, Pennsylvania</div>
-                        </div>
-                        <div class="grid grid-cols-2">
-                            <div class="px-4 py-2 font-semibold">Permanant Address</div>
-                            <div class="px-4 py-2">Arlington Heights, IL, Illinois</div>
                         </div>
                         <div class="grid grid-cols-2">
                             <div class="px-4 py-2 font-semibold">Email.</div>
