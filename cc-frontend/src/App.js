@@ -8,6 +8,7 @@ import Post from './components/Post'
 import Resources from './components/Resources'
 import axios from 'axios';
 import ProfilePage from './components/ProfilePage';
+import Comments from './components/Comments';
 
 function App() {
   
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" element={<Feed/>} />
         <Route path="/post" element={<PostPage />} />
         <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/:postid/comments" element={<Comments />} />
       </Routes>
     </div>
   )

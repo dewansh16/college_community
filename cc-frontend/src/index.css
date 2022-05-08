@@ -9,7 +9,7 @@
         width: 30px;
         margin: 6px 0;
       }
-      .navIcons{
+    .navIcons{
         @apply w-7 hidden md:inline-flex text-white hover:scale-[115%] transition-all ease-out duration-100 cursor-pointer
     }
     .bg-nav{
@@ -26,6 +26,16 @@ body{
   background-attachment: fixed;
   background-color: black;
   width: 100%;
-background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
 }
-
+::-webkit-scrollbar{
+  width: 12px;
+  border-radius: 100vw;
+}
+::-webkit-scrollbar-track{
+  opacity: 0;
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 100vw;
+  background: rgb(61, 60, 60);
+}

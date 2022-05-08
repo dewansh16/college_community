@@ -2,12 +2,8 @@ import React from 'react'
 import {
   SearchIcon,
   PlusCircleIcon,
-  UserGroupIcon,
-  HeartIcon,
-  PaperAirplaneIcon,
   MenuIcon,
 } from '@heroicons/react/outline'
-import { HomeIcon } from '@heroicons/react/solid'
 import { Link } from 'react-router-dom'
 
 function Navbar() {
